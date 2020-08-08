@@ -1,0 +1,25 @@
+name: Rustyword Gen
+version: "1.0"
+author: Einar Ase <einar.ase.91@gmail.com>
+about: Generates secure password
+args:
+  - length:
+      short: L
+      long: length
+      help: Length of the password
+      default_value: "20"
+  - numbers:
+      short: n
+      long: numbers
+      help: Percent value of numbers
+      default_value: "0.25"
+  - symbols:
+      short: s
+      long: symbols
+      help: Percent value of symbols
+      default_value: "0.25"
+  - letters:
+      short: l
+      long: letters
+      help: Percent value of letters
+      default_value: "0.5"
