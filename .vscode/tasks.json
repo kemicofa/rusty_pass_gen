@@ -32,6 +32,15 @@
 			"args": [
 				"t"
 			]
+		},
+		{
+			"label": "cargo doc",
+			"type": "shell",
+			"command": "cargo",
+			"args": [
+				"doc",
+				"--open"
+			]
 		}
 	]
 }

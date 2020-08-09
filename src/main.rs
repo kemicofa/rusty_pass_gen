@@ -1,3 +1,6 @@
+//! # Rusty Pass Gen
+
+
 use rand::random;
 use clap::{App, load_yaml, ArgMatches};
 use std::cmp::Ordering;
@@ -5,6 +8,7 @@ const LETTERS: &str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const NUMBERS: &str = "1234567890";
 const SYMBOLS: &str = "§±!@#$%^&*()_+=-[]{}|/?.>,<;:";
 
+/// Generates a String of randomely ordered characters
 fn generate_characters(string: &str, len: usize) -> String {
     let mut res = String::new();
     let count = string.chars().count();
@@ -16,6 +20,7 @@ fn generate_characters(string: &str, len: usize) -> String {
     res
 }
 
+/// Shuffles a given string randomely
 fn shuffle(string: String) -> String {
     let mut shuffed_vec = string.chars().collect::<Vec<char>>();
     
@@ -30,6 +35,7 @@ fn shuffle(string: String) -> String {
     shuffed_vec.into_iter().collect()
 }
 
+/// Parses command line input from Clap
 fn parse_input <T: std::str::FromStr>(matches: &ArgMatches, name: &str) -> Option<T> {
     matches.value_of(name)?.parse().ok()
 }

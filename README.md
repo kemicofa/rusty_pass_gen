@@ -1,16 +1,5 @@
-# Rust Password Generator
+# Rusty Pass Gen
 
-Generates a password with a default length of 20, can be overrided by passing an optional
-argument.
+Generates a password of default length of 20.
 
-Building
-
-```bash
-cargo build --release
-```
-
-Running
-
-```bash
-./password_generator [password length]
-```
+Run `./rusty_pass_gen --help` for a list of accepted commands
