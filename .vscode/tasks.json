@@ -15,7 +15,10 @@
 			"type": "shell",
 			"command": "cargo",
 			"args": [
-				"run"
+				"run",
+				"--",
+				"-L",
+				"100"
 			],
 			"group": {
 				"kind": "build",
