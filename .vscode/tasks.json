@@ -24,6 +24,14 @@
 				"kind": "build",
 				"isDefault": true
 			}
+		},
+		{
+			"label": "cargo test",
+			"type": "shell",
+			"command": "cargo",
+			"args": [
+				"t"
+			]
 		}
 	]
 }
