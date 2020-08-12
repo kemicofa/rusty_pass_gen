@@ -9,3 +9,11 @@ edition = "2018"
 [dependencies]
 rand = "0.7.3"
 clap = { features = ["yaml"] }
+
+[lib]
+name = "mylib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "mybin"
+path = "src/bin.rs"
