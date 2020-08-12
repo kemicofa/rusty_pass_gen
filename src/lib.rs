@@ -28,7 +28,7 @@ fn shuffle(string: String) -> String {
     chars.into_iter().collect::<String>()
 }
 
-
+#[export_name = "generate_password"]
 pub fn generate_password(password_length: u32, letters_percent: f32, numbers_percent: f32, symbols_percent: f32) -> String {
     let mut password = String::with_capacity(password_length as usize);
     password += &generate_characters(NUMBERS, (numbers_percent * password_length as f32) as _);
