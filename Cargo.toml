@@ -11,9 +11,9 @@ rand = "0.7.3"
 clap = { features = ["yaml"] }
 
 [lib]
-name = "mylib"
+name = "rusty_pass_gen"
 path = "src/lib.rs"
 
 [[bin]]
-name = "mybin"
+name = "rusty_pass_gen"
 path = "src/bin.rs"

@@ -1,7 +1,7 @@
 //! # Rusty Pass Gen
 
 use clap::{App, load_yaml, ArgMatches};
-use mylib::generate_password;
+use rusty_pass_gen::generate_password;
 
 /// Parses command line input from Clap
 fn parse_input <T: std::str::FromStr>(matches: &ArgMatches, name: &str) -> Option<T> {

@@ -17,7 +17,7 @@
 			"args": [
 				"run",
 				"--bin",
-				"mybin",
+				"rusty_pass_gen",
 				"--",
 				"-L",
 				"100"
